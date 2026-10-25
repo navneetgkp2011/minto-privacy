@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy – Minto</title>
+<meta name="description" content="How Minto, a WhatsApp ordering service by Nirmala Devi and Sons, collects, uses and protects your information.">
+<link rel="icon" type="image/svg+xml" href="minto-logo.svg">
+<link rel="apple-touch-icon" href="minto-app-icon-1024.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F3F8F5;
+    --surface: #FFFFFF;
+    --ink: #17312A;
+    --muted: #4F665E;
+    --rule: #CFE0D8;
+    --leaf: #0E6B55;
+    --bubble: #D9F7E3;
+    --bubble-ink: #123B2E;
+    --mark: #E8A33D;
+    color-scheme: light;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0F1D19;
+      --surface: #152822;
+      --ink: #E4F0EA;
+      --muted: #A3B9B0;
+      --rule: #2A4239;
+      --leaf: #5BD1A9;
+      --bubble: #1F4A3A;
+      --bubble-ink: #E4F7EC;
+      --mark: #F0B860;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0F1D19; --surface: #152822; --ink: #E4F0EA; --muted: #A3B9B0;
+    --rule: #2A4239; --leaf: #5BD1A9; --bubble: #1F4A3A; --bubble-ink: #E4F7EC;
+    --mark: #F0B860; color-scheme: dark;
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 1.0625rem/1.65 "Hanken Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+
+  header { margin-bottom: 2.75rem; }
+  .brand-row { margin-bottom: 1.75rem; }
+  .brand-row { display: flex; align-items: center; gap: 0.85rem; }
+  .logo { width: 3.6rem; height: 3.6rem; flex: none; }
+  .brand {
+    font: 800 2.75rem/1 "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: -0.02em;
+    color: var(--leaf);
+    margin: 0;
+  }
+  .owner { margin: 0.3rem 0 0; color: var(--muted); font-weight: 500; }
+
+  /* The one memorable element: the motto as an incoming WhatsApp message */
+  .bubble {
+    position: relative;
+    display: inline-block;
+    max-width: 34rem;
+    background: var(--bubble);
+    color: var(--bubble-ink);
+    padding: 0.9rem 1.1rem 1.4rem;
+    border-radius: 0 1rem 1rem 1rem;
+    font: 600 1.3rem/1.35 "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  }
+  .bubble::before {
+    content: "";
+    position: absolute; top: 0; left: -0.6rem;
+    border-top: 0.75rem solid var(--bubble);
+    border-left: 0.75rem solid transparent;
+  }
+  .bubble small {
+    position: absolute; right: 0.9rem; bottom: 0.35rem;
+    font: 500 0.75rem/1 "Hanken Grotesk", system-ui, sans-serif;
+    opacity: 0.7;
+  }
+
+  h1 {
+    font: 800 2rem/1.15 "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: -0.015em;
+    margin: 3rem 0 0.35rem;
+  }
+  .updated { color: var(--muted); margin: 0 0 2rem; }
+
+  h2 {
+    font: 600 1.3rem/1.3 "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    margin: 2.5rem 0 0.6rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.4rem; }
+  li::marker { color: var(--leaf); }
+  strong { font-weight: 600; }
+
+  .summary {
+    background: var(--surface);
+    border-left: 4px solid var(--mark);
+    padding: 1rem 1.25rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .summary p:last-child { margin-bottom: 0; }
+
+  a { color: var(--leaf); text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 2px solid var(--leaf); outline-offset: 2px; border-radius: 2px; }
+
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.4rem;
+  }
+  .contact p { margin: 0 0 0.35rem; }
+  .contact p:last-child { margin: 0; }
+
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
+
+  @media (max-width: 30rem) {
+    .brand { font-size: 2.25rem; }
+    .logo { width: 3rem; height: 3rem; }
+    .bubble { font-size: 1.15rem; }
+    h1 { font-size: 1.65rem; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header>
+    <div class="brand-row">
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Minto logo">
+  <path fill="#0E6B55" d="M34 8H86A26 26 0 0 1 112 34V70A26 26 0 0 1 86 96H40L17 113L22 93.5A26 26 0 0 1 8 70V34A26 26 0 0 1 34 8Z"/>
+  <path fill="#FFFFFF" d="M39 42H81L87.5 80.5A5 5 0 0 1 82.5 86.5H37.5A5 5 0 0 1 32.5 80.5Z"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" d="M49 47V36A11 11 0 0 1 71 36V47"/>
+  <circle cx="49" cy="49" r="2.6" fill="#0E6B55"/>
+  <circle cx="71" cy="49" r="2.6" fill="#0E6B55"/>
+  <path fill="#E8A33D" d="M60 80C52 76 51 65 67 58C70 69 65 77 60 80Z"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" d="M60 80C61 72 63 67 66.5 61"/>
+</svg>
+      <div>
+        <p class="brand">Minto</p>
+        <p class="owner">A service of Nirmala Devi and Sons</p>
+      </div>
+    </div>
+    <div class="bubble">
+      Order from your nearest shop, right on WhatsApp. No app required.
+      <small>Minto</small>
+    </div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 25 October 2026</p>
+
+  <div class="summary">
+    <p><strong>In short:</strong> Minto uses your WhatsApp number, the products you choose and your delivery address to place your order with a nearby shop and get it delivered to you. We share your order only with the shopkeeper and the person delivering it. We do not sell your information, and you can ask us to delete it at any time.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Minto is a WhatsApp chatbot run by <strong>Nirmala Devi and Sons</strong> (“we”, “us”). It lets buyers browse products from retail shops near them, place an order, and have it delivered, all inside WhatsApp. Shopkeepers receive and manage orders through the same chatbot.</p>
+  <p>This policy explains what information we collect when you use Minto, how we use it, and the choices you have.</p>
+
+  <h2>Information we collect</h2>
+  <p>From buyers:</p>
+  <ul>
+    <li><strong>WhatsApp details:</strong> your phone number and the profile name shown on your WhatsApp account.</li>
+    <li><strong>Messages you send to Minto:</strong> text, button and list selections, and any images, voice notes or files you choose to send.</li>
+    <li><strong>Order details:</strong> the shop you pick, the products and quantities, order amount, and order status.</li>
+    <li><strong>Delivery details:</strong> the address and any location you share so we can find nearby shops and deliver your order.</li>
+  </ul>
+  <p>From shopkeepers:</p>
+  <ul>
+    <li>Shop name, owner or contact name, WhatsApp number, shop address or location, and the product list and prices you add.</li>
+  </ul>
+  <p>Technical information: WhatsApp sends us delivery receipts (sent, delivered, read) and message timestamps so we know your messages and order updates reached you.</p>
+  <p>Minto does not ask for your card details, bank account details or UPI PIN in chat, and you should never share them with the chatbot.</p>
+
+  <h2>How we use your information</h2>
+  <ul>
+    <li>To show you shops and products near you.</li>
+    <li>To place your order with the shop you selected.</li>
+    <li>To arrange delivery to the address you gave.</li>
+    <li>To send you order confirmations, status updates and replies to your questions.</li>
+    <li>To keep records of orders for the buyer, the shop and our own accounts.</li>
+    <li>To fix problems, prevent misuse and improve the service.</li>
+  </ul>
+  <p>We send promotional messages only to people who have agreed to receive them, and you can stop them any time by replying <strong>STOP</strong>.</p>
+
+  <h2>Who we share it with</h2>
+  <ul>
+    <li><strong>The shopkeeper you order from</strong> receives your name, phone number, order and delivery address so they can prepare your order.</li>
+    <li><strong>The delivery person</strong> receives your name, phone number and delivery address so they can reach you.</li>
+    <li><strong>Meta (WhatsApp)</strong> carries messages between you and Minto. Your use of WhatsApp is also covered by WhatsApp’s own privacy policy.</li>
+    <li><strong>Service providers</strong> who host our systems, such as Amazon Web Services, store data for us and may only use it to run Minto.</li>
+    <li><strong>Authorities</strong>, only when the law requires it.</li>
+  </ul>
+  <p>We do not sell or rent your personal information to anyone.</p>
+
+  <h2>Where your data is stored and how we protect it</h2>
+  <p>Your information is stored on secure cloud servers located in India (Amazon Web Services, Mumbai region). Access is limited to the people who need it to run Minto, connections are encrypted, and access keys are kept private.</p>
+
+  <h2>How long we keep it</h2>
+  <p>We keep order and delivery records for as long as needed for accounting, tax and dispute purposes, and chat messages only as long as needed to provide support. When information is no longer needed, we delete it or make it anonymous.</p>
+
+  <h2>Your choices and rights</h2>
+  <p>Under India’s Digital Personal Data Protection Act, 2023, and other applicable law, you can:</p>
+  <ul>
+    <li>Ask what information we hold about you.</li>
+    <li>Ask us to correct information that is wrong.</li>
+    <li>Ask us to delete your information. Send <strong>DELETE MY DATA</strong> to the Minto chatbot, or contact us using the details below. We will delete it, except records we must keep by law, and confirm on WhatsApp.</li>
+    <li>Withdraw your consent by sending <strong>STOP</strong> or by blocking the Minto number. You will no longer be able to place orders through Minto.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Minto is meant for people aged 18 or older. If you believe a child has shared information with us, contact us and we will delete it.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change this policy, we will update it on this page and change the date at the top. For important changes, we will let you know on WhatsApp.</p>
+
+  <h2>Contact us</h2>
+  <div class="contact">
+    <p><strong>Nirmala Devi and Sons</strong></p>
+    <p>Phone / WhatsApp: <a href="tel:+919151175919">+91 91511 75919</a></p>
+    <p>For privacy questions, data requests or complaints, contact us at this number and we will respond within 7 working days.</p>
+  </div>
+
+  <footer>
+    <p>© 2026 Nirmala Devi and Sons. Minto.</p>
+  </footer>
+
+</main>
+</body>
+</html>
